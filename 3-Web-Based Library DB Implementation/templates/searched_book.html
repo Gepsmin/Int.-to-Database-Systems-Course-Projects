@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEARCHED BOOK</title>
+</head>
+<body>
+    <table border= 1 >
+        {% for book in books %}
+        <tr>
+            <td> {{book[0]}}</td>
+            <td> {{book[1]}}</td>
+            <td> {{book[2]}}</td>
+            <td> {{book[3]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <form action="/">
+        <input value="MAIN MENU" type="submit">
+    </form>
+
+</body>
+</html>

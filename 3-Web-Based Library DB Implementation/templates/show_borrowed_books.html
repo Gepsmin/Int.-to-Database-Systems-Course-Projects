@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BORROWED BOOKS</title>
+</head>
+<body>
+    <div>
+        <form method="POST" action="">
+            TC Number <input type="number" name="tc">
+            <br>
+            <input value="SHOW BORROWED" type="submit">
+        </form>
+
+        {% if show %}
+
+        <h1>Hold book number:{{hold}}</h1>
+        <table border= 1 >
+            {% for book in borrowed %}
+            <tr>
+                <td> {{book[0]}}</td>
+                <td> {{book[1]}}</td>
+                <td> {{book[2]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% endif %}
+    </div>
+
+
+</body>
+</html>
